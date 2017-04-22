@@ -36,10 +36,18 @@
                     <ul class="nav navbar-nav">
                         <li class="${currentPage == 'index' ? 'active' : ''}"><a href="index.jsp">Home</a></li>
                         <li class="${currentPage == 'features' ? 'active' : ''}"><a href="features.jsp">Features</a></li>
-                        <li class="${currentPage == 'about' ? 'active' : ''}"><a href="about.jsp">About Us</a></li>
+                        <li class="${currentPage == 'about' ? 'active' : ''} dropdown">
+                            <a class="dropdown-toggle" href="about.jsp">About Us
+                            <span class="caret"></span> </a>
+							<ul class="dropdown-menu">
+								<li><a href="http://teammatesonline.blogspot.sg/">Blog</a></li>
+								<li><a href="usermap.jsp">Our Users</a></li>
+							</ul>
+						</li>
+                        <!-- <li class="${currentPage == 'about' ? 'active' : ''}"><a href="about.jsp">About Us</a></li> -->
                         <li class="${currentPage == 'contact' ? 'active' : ''}"><a href="contact.jsp">Contact</a></li>
                         <li class="${currentPage == 'terms' ? 'active' : ''}"><a href="terms.jsp">Terms of Use</a></li>
-                    </ul>
+					</ul>
                     <form class="navbar-form navbar-right" action="/login" name="login">
                         <input type="submit" name="student" class="btn btn-login " id="btnStudentLogin" value="Student Login" label="studentLogin">
                         <input type="submit" name="instructor" class="btn btn-login" id="btnInstructorLogin" value="Instructor Login" label="instructorLogin">

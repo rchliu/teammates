@@ -408,6 +408,12 @@ input.inline {
 ///////////////////////// NavBar ////////////////////////////
 //////////////////////////////////////////////////////////*/
 
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
 .comment-list {
     padding-top: 15px;
 }
